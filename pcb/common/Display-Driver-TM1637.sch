@@ -1,0 +1,252 @@
+EESchema Schematic File Version 4
+LIBS:Koeklok
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR05
+U 1 1 5CDB93CB
+P 5150 2150
+F 0 "#PWR05" H 5150 2000 50  0001 C CNN
+F 1 "VCC" H 5150 2300 50  0000 C CNN
+F 2 "" H 5150 2150 50  0001 C CNN
+F 3 "" H 5150 2150 50  0001 C CNN
+	1    5150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5CDB93D1
+P 5150 4250
+F 0 "#PWR06" H 5150 4000 50  0001 C CNN
+F 1 "GND" H 5155 4077 50  0000 C CNN
+F 2 "" H 5150 4250 50  0001 C CNN
+F 3 "" H 5150 4250 50  0001 C CNN
+	1    5150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4200 5150 4250
+$Comp
+L Device:R R1
+U 1 1 5CDB93DA
+P 4250 2950
+F 0 "R1" H 4320 2996 50  0000 L CNN
+F 1 "10k" V 4250 2850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4180 2950 50  0001 C CNN
+F 3 "~" H 4250 2950 50  0001 C CNN
+	1    4250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CDB93E0
+P 4550 2950
+F 0 "R2" H 4620 2996 50  0000 L CNN
+F 1 "10k" V 4550 2850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4480 2950 50  0001 C CNN
+F 3 "~" H 4550 2950 50  0001 C CNN
+	1    4550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5CDB93E6
+P 4250 3450
+F 0 "C1" H 4365 3496 50  0000 L CNN
+F 1 "100pF" H 4250 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4288 3300 50  0001 C CNN
+F 3 "~" H 4250 3450 50  0001 C CNN
+	1    4250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5CDB93EC
+P 4550 3450
+F 0 "C2" H 4665 3496 50  0000 L CNN
+F 1 "100pF" H 4550 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4588 3300 50  0001 C CNN
+F 3 "~" H 4550 3450 50  0001 C CNN
+	1    4550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 5CDB93F2
+P 4550 2700
+F 0 "#PWR03" H 4550 2550 50  0001 C CNN
+F 1 "VCC" H 4567 2873 50  0000 C CNN
+F 2 "" H 4550 2700 50  0001 C CNN
+F 3 "" H 4550 2700 50  0001 C CNN
+	1    4550 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3150 4250 3150
+Wire Wire Line
+	4750 3250 4550 3250
+Wire Wire Line
+	4250 3150 4250 3100
+Connection ~ 4250 3150
+Wire Wire Line
+	4250 3150 4750 3150
+Wire Wire Line
+	4250 3150 4250 3300
+Wire Wire Line
+	4550 3250 4550 3300
+Connection ~ 4550 3250
+Wire Wire Line
+	4550 3250 4150 3250
+Wire Wire Line
+	4550 3250 4550 3100
+Wire Wire Line
+	4550 2800 4550 2750
+Wire Wire Line
+	4250 2800 4250 2750
+Wire Wire Line
+	4250 2750 4550 2750
+Connection ~ 4550 2750
+Wire Wire Line
+	4550 2750 4550 2700
+$Comp
+L power:GND #PWR04
+U 1 1 5CDB9407
+P 4550 3700
+F 0 "#PWR04" H 4550 3450 50  0001 C CNN
+F 1 "GND" H 4555 3527 50  0000 C CNN
+F 2 "" H 4550 3700 50  0001 C CNN
+F 3 "" H 4550 3700 50  0001 C CNN
+	1    4550 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3600 4550 3650
+Wire Wire Line
+	4250 3600 4250 3650
+Wire Wire Line
+	4250 3650 4550 3650
+Connection ~ 4550 3650
+Wire Wire Line
+	4550 3650 4550 3700
+Wire Wire Line
+	5150 2150 5150 2200
+Entry Wire Line
+	5950 2600 5850 2500
+Entry Wire Line
+	5950 2500 5850 2400
+Wire Wire Line
+	5550 2400 5850 2400
+Wire Wire Line
+	5550 2500 5850 2500
+Wire Wire Line
+	5550 2600 5850 2600
+Wire Wire Line
+	5550 2700 5850 2700
+Wire Wire Line
+	5850 2800 5550 2800
+Wire Wire Line
+	5550 2900 5850 2900
+Wire Wire Line
+	5850 3000 5550 3000
+Wire Wire Line
+	5550 3100 5850 3100
+Text Label 5600 2400 0    50   ~ 0
+SEG1
+Text Label 5600 2500 0    50   ~ 0
+SEG2
+Text Label 5600 2600 0    50   ~ 0
+SEG3
+Text Label 5600 2700 0    50   ~ 0
+SEG4
+Text Label 5600 2800 0    50   ~ 0
+SEG5
+Text Label 5600 2900 0    50   ~ 0
+SEG6
+Text Label 5600 3000 0    50   ~ 0
+SEG7
+Text Label 5600 3100 0    50   ~ 0
+SEG8
+Entry Wire Line
+	5950 2700 5850 2600
+Entry Wire Line
+	5950 2800 5850 2700
+Entry Wire Line
+	5950 2900 5850 2800
+Entry Wire Line
+	5950 3000 5850 2900
+Entry Wire Line
+	5950 3100 5850 3000
+Entry Wire Line
+	5950 3200 5850 3100
+Wire Wire Line
+	5550 3250 5850 3250
+Wire Wire Line
+	5550 3350 5850 3350
+Wire Wire Line
+	5550 3450 5850 3450
+Wire Wire Line
+	5550 3550 5850 3550
+Wire Wire Line
+	5550 3650 5850 3650
+Wire Wire Line
+	5550 3750 5850 3750
+Text Label 5800 3250 2    50   ~ 0
+GRID1
+Text Label 5800 3350 2    50   ~ 0
+GRID2
+Text Label 5800 3450 2    50   ~ 0
+GRID3
+Text Label 5800 3550 2    50   ~ 0
+GRID4
+Text Label 5800 3650 2    50   ~ 0
+GRID5
+Text Label 5800 3750 2    50   ~ 0
+GRID6
+Entry Wire Line
+	5950 3350 5850 3250
+Entry Wire Line
+	5950 3450 5850 3350
+Entry Wire Line
+	5950 3550 5850 3450
+Entry Wire Line
+	5950 3650 5850 3550
+Entry Wire Line
+	5950 3750 5850 3650
+Entry Wire Line
+	5950 3850 5850 3750
+Wire Bus Line
+	5950 4200 6050 4200
+$Comp
+L Koeklok:TM1637 U7
+U 1 1 5CDB943F
+P 5150 3200
+F 0 "U7" H 5350 4250 50  0000 C CNN
+F 1 "TM1637" H 5350 4150 50  0000 C CNN
+F 2 "" H 5150 3050 50  0001 C CNN
+F 3 "https://www.mcielectronics.cl/website_MCI/static/documents/Datasheet_TM1637.pdf" H 5150 1900 50  0001 C CNN
+	1    5150 3200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5550 4000
+NoConn ~ 5550 3900
+Text HLabel 4150 3150 0    50   Input ~ 0
+DIO
+Text HLabel 4150 3250 0    50   Input ~ 0
+CLK
+Text HLabel 6050 4200 2    50   Output ~ 0
+BUS
+Wire Bus Line
+	5950 2500 5950 4200
+$EndSCHEMATC
