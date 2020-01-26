@@ -29,9 +29,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=../common
-[eeschema/libraries]
-LibName1=Koeklok
+LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=

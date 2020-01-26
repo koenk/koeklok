@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Koeklok
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -44,7 +43,7 @@ U 1 1 5CDB93DA
 P 4250 2950
 F 0 "R1" H 4320 2996 50  0000 L CNN
 F 1 "10k" V 4250 2850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4180 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4180 2950 50  0001 C CNN
 F 3 "~" H 4250 2950 50  0001 C CNN
 	1    4250 2950
 	1    0    0    -1  
@@ -55,7 +54,7 @@ U 1 1 5CDB93E0
 P 4550 2950
 F 0 "R2" H 4620 2996 50  0000 L CNN
 F 1 "10k" V 4550 2850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4480 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4480 2950 50  0001 C CNN
 F 3 "~" H 4550 2950 50  0001 C CNN
 	1    4550 2950
 	1    0    0    -1  
@@ -142,99 +141,13 @@ Wire Wire Line
 	4550 3650 4550 3700
 Wire Wire Line
 	5150 2150 5150 2200
-Entry Wire Line
-	5950 2600 5850 2500
-Entry Wire Line
-	5950 2500 5850 2400
-Wire Wire Line
-	5550 2400 5850 2400
-Wire Wire Line
-	5550 2500 5850 2500
-Wire Wire Line
-	5550 2600 5850 2600
-Wire Wire Line
-	5550 2700 5850 2700
-Wire Wire Line
-	5850 2800 5550 2800
-Wire Wire Line
-	5550 2900 5850 2900
-Wire Wire Line
-	5850 3000 5550 3000
-Wire Wire Line
-	5550 3100 5850 3100
-Text Label 5600 2400 0    50   ~ 0
-SEG1
-Text Label 5600 2500 0    50   ~ 0
-SEG2
-Text Label 5600 2600 0    50   ~ 0
-SEG3
-Text Label 5600 2700 0    50   ~ 0
-SEG4
-Text Label 5600 2800 0    50   ~ 0
-SEG5
-Text Label 5600 2900 0    50   ~ 0
-SEG6
-Text Label 5600 3000 0    50   ~ 0
-SEG7
-Text Label 5600 3100 0    50   ~ 0
-SEG8
-Entry Wire Line
-	5950 2700 5850 2600
-Entry Wire Line
-	5950 2800 5850 2700
-Entry Wire Line
-	5950 2900 5850 2800
-Entry Wire Line
-	5950 3000 5850 2900
-Entry Wire Line
-	5950 3100 5850 3000
-Entry Wire Line
-	5950 3200 5850 3100
-Wire Wire Line
-	5550 3250 5850 3250
-Wire Wire Line
-	5550 3350 5850 3350
-Wire Wire Line
-	5550 3450 5850 3450
-Wire Wire Line
-	5550 3550 5850 3550
-Wire Wire Line
-	5550 3650 5850 3650
-Wire Wire Line
-	5550 3750 5850 3750
-Text Label 5800 3250 2    50   ~ 0
-GRID1
-Text Label 5800 3350 2    50   ~ 0
-GRID2
-Text Label 5800 3450 2    50   ~ 0
-GRID3
-Text Label 5800 3550 2    50   ~ 0
-GRID4
-Text Label 5800 3650 2    50   ~ 0
-GRID5
-Text Label 5800 3750 2    50   ~ 0
-GRID6
-Entry Wire Line
-	5950 3350 5850 3250
-Entry Wire Line
-	5950 3450 5850 3350
-Entry Wire Line
-	5950 3550 5850 3450
-Entry Wire Line
-	5950 3650 5850 3550
-Entry Wire Line
-	5950 3750 5850 3650
-Entry Wire Line
-	5950 3850 5850 3750
-Wire Bus Line
-	5950 4200 6050 4200
 $Comp
-L Koeklok:TM1637 U7
+L Koeklok:TM1637 U2
 U 1 1 5CDB943F
 P 5150 3200
-F 0 "U7" H 5350 4250 50  0000 C CNN
+F 0 "U2" H 5350 4250 50  0000 C CNN
 F 1 "TM1637" H 5350 4150 50  0000 C CNN
-F 2 "" H 5150 3050 50  0001 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 5150 3050 50  0001 C CNN
 F 3 "https://www.mcielectronics.cl/website_MCI/static/documents/Datasheet_TM1637.pdf" H 5150 1900 50  0001 C CNN
 	1    5150 3200
 	1    0    0    -1  
@@ -245,8 +158,60 @@ Text HLabel 4150 3150 0    50   Input ~ 0
 DIO
 Text HLabel 4150 3250 0    50   Input ~ 0
 CLK
-Text HLabel 6050 4200 2    50   Output ~ 0
-BUS
-Wire Bus Line
-	5950 2500 5950 4200
+Text GLabel 5650 2400 2    50   Input ~ 0
+SEG1
+Text GLabel 5650 2500 2    50   Input ~ 0
+SEG2
+Text GLabel 5650 2600 2    50   Input ~ 0
+SEG3
+Text GLabel 5650 2700 2    50   Input ~ 0
+SEG4
+Text GLabel 5650 2800 2    50   Input ~ 0
+SEG5
+Text GLabel 5650 2900 2    50   Input ~ 0
+SEG6
+Text GLabel 5650 3000 2    50   Input ~ 0
+SEG7
+Text GLabel 5650 3100 2    50   Input ~ 0
+SEG8
+Text GLabel 5650 3250 2    50   Input ~ 0
+GRID1
+Text GLabel 5650 3350 2    50   Input ~ 0
+GRID2
+Text GLabel 5650 3450 2    50   Input ~ 0
+GRID3
+Text GLabel 5650 3550 2    50   Input ~ 0
+GRID4
+Text GLabel 5650 3650 2    50   Input ~ 0
+GRID5
+Text GLabel 5650 3750 2    50   Input ~ 0
+GRID6
+Wire Wire Line
+	5550 2400 5650 2400
+Wire Wire Line
+	5550 2500 5650 2500
+Wire Wire Line
+	5550 2600 5650 2600
+Wire Wire Line
+	5550 2700 5650 2700
+Wire Wire Line
+	5550 2800 5650 2800
+Wire Wire Line
+	5550 2900 5650 2900
+Wire Wire Line
+	5550 3000 5650 3000
+Wire Wire Line
+	5550 3100 5650 3100
+Wire Wire Line
+	5550 3250 5650 3250
+Wire Wire Line
+	5550 3350 5650 3350
+Wire Wire Line
+	5550 3450 5650 3450
+Wire Wire Line
+	5550 3550 5650 3550
+Wire Wire Line
+	5550 3650 5650 3650
+Wire Wire Line
+	5550 3750 5650 3750
 $EndSCHEMATC
